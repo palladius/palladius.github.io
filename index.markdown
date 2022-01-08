@@ -8,7 +8,19 @@ title:  "Home"
 date:   2022-01-08 12:20:05 +0100
 categories: jekyll update
 ---
+{% include galheader.html %}
+
 Hi I'm SREccardo
 
-
 I build this site with Jekyll.
+
+## includiamo la Gallery
+
+
+ {% include gal.html %}
+
+
+ecco fatto
+
+ {% include gal.html image="image-1.jpg" %}
+

@@ -20,6 +20,7 @@ gem "minima", "~> 2.5"
 # non soi a ciosa serve ma sembra facile da installare: https://jekyllrb.com/docs/assets/
 gem 'jekyll-coffeescript'
 gem 'lolcat'
+gem 'exifr' # https://github.com/aerobless/jekyll-photo-gallery 
 # /Riccardo
 ##########################################################################################
 
