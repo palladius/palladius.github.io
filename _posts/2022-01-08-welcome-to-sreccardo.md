@@ -38,6 +38,6 @@ print_hi('Tom')
   {{ myimage.path }}
 {% endfor %}
 
-## finbe immagini
+## fine immagini
 
 ![image tooltip here](/assets/riccardo.jpg)
