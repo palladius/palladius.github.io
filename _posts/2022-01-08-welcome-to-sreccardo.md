@@ -1,7 +1,8 @@
 ---
 layout: post
-title:  "Ciao Alessandro!"
+title:  "Welcome to SREccardo!"
 ---
+{% assign image_files = site.static_files | where: "image", true %}
 
 # Welcome
 
@@ -14,6 +15,36 @@ I hope you like it!
 prova post: https://jekyllrb.com/docs/liquid/tags/#linking-to-posts
 
 -- @sreccardo
+
+## Immagini di Alessandro:
+
+
+Immagini di Alessandro:
+
+{% for myimage in image_files %}
+  {% if  myimage.path contains 'aj' -%}
+      <img src="{{ myimage.path }}" height="200" alt="{{ myimage.path }}" />
+
+  {% endif %}
+{% endfor %}
+
+
+## prova immagini
+
+
+{% for myimage in image_files %}
+  <img src="{{ myimage.path }}" height="80" alt="{{ myimage.path }}" />
+  <!-- 
+  {{ myimage.path }}
+  #  ! [ metto altezza ] ( { { myimage.path } } )
+  -->
+{% endfor %}
+
+
+## fine immagini
+
+![image tooltip here](/assets/immagini/riccardume/riccardo.jpg)
+
 
 ## Why I love septober
 
@@ -30,14 +61,3 @@ print_hi('Tom')
 #=> prints 'Hi, Tom' to STDOUT.
 {% endhighlight %}
 
-
-## prova immagini
-
-{% assign image_files = site.static_files | where: "image", true %}
-{% for myimage in image_files %}
-  {{ myimage.path }}
-{% endfor %}
-
-## fine immagini
-
-![image tooltip here](/assets/riccardo.jpg)
