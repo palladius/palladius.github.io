@@ -1,16 +1,17 @@
 -
- title: (RiccOverviewYaml) Micro Album cuties
+ title: Micro Album cuties
  directory: micro-album-cuties
  preview:
   filename: seby-3262x4567.jpg
   original: seby-3262x4567.jpg
-  sizes:
-  - VS-2012-6088-4242x2828.jpg
-  - VS-2012-6088-2121x1414.jpg
-  - VS-2012-6088-2999x1999.jpg
-  thumbnail: VS-2012-6088-thumbnail.jpg
+  # sizes:
+  # - VS-2012-6088-4242x2828.jpg
+  # - VS-2012-6088-2121x1414.jpg
+  # - VS-2012-6088-2999x1999.jpg
+  thumbnail: seby-3262x4567.jpg
 - 
- title: RiOv Esempio del menga 2 (Uetli neve ma non va)
+ #
+ title: Uetliberg with snow!
  directory: 20220109-snow-in-uetliberg
  preview:
   filename: PXL_20220109_091406343.jp
@@ -21,9 +22,28 @@
 #  - VS-2012-6088-2121x1414.jpg
   thumbnail: PXL_20220109_091406343.jp-3840x2880.jpg
 - 
-  title: RiOv Tutto il 2021 stika
-  director: riccardo-2021
-  thumbnail: PXL_20211127_072726180.MP.jp-3024x4032.jpg
+  title: (RiccOverviewYaml) Tutto il 2021
+  directory: riccardo-2021
+  picture_path: riccardo-2021
+  preview:
+    filename: PXL_20210721_152004677.PORTRAIT.jp-4032x3024.jpg # carino japano
+    original: riccardo-2021/PXL_20210801_074155532-1000x1000.jpg # bellissimo quadrato
+    thumbnail: PXL_20210721_152004677.PORTRAIT.jp-4032x3024.jpg
+    sizes:
+    - boh
+-
+ title: A More Complicated Example Gallery
+ directory: ghent-light-festival
+ picture_path: ghent-light-festival/part1
+ preview:
+  filename: Lichtfestival-0058
+  original: Lichtfestival-0058-6000x4000.jpg
+  sizes:
+  - Lichtfestival-0058-2121x1414.jpg
+  - Lichtfestival-0058-2999x1999.jpg
+  - Lichtfestival-0058-4242x2828.jpg
+  thumbnail: Lichtfestival-0058-thumbnail.jpg
+
 # -
 #  title: RiOv esempio complicato
 #  directory: ghent-light-festival

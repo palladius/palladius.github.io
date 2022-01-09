@@ -1,9 +1,10 @@
+# Ricc Jekyll website
 
 Dono un po' confuso da jekyll e o suoi file quindi ho messo tutto sotto BLOG.
 Adesso fuori da li ci metto liberie di vendors, dockerizzazione etc. Ovviamente lascio dentro 
 quelle piccole cose che dEVONO stare dentro come l'entrypoint per docker :)
 
-# Image Gallery
+## Image Gallery
 
 https://olivierpieters.be/blog/2016/02/26/creating-a-jekyll-image-gallery
 
@@ -18,3 +19,13 @@ There also is a save option (--save) ensures these dependencies are saved to a b
 
 After installing the dependencies, make sure you are using the latest version of Jekyll too, since what will follow has only been tested on Jekyll 3.0.1.
 ```
+
+## dockerizzazione
+
+Penso che jekyll usi docker per fare una build CLEANc he poi mette i file statici. Una volta fatto jekyol non sserve piu a una cippa :)
+fporse basta apche o nginx.
+
+https://michaelsoolee.com/compile-jekyll-site-docker/
+
+    docker run --rm -it --volume="$PWD:/srv/jekyll" --volume="$PWD/vendor/bundle:/usr/local/bundle" --env JEKYLL_ENV=production jekyll/jekyll:4.0 jekyll build
+

@@ -4,7 +4,7 @@ title: FotoRicc Index
 permalink: /fotoricc/
 ---
 
-<h1>Bella Ricc</h1>
+<h1>Qui uso ricc-overview.YML </h1>
 
 Bella Ric. Ho copiato opieters in un altro folder e sto adattando alle mie foto.
 
@@ -20,7 +20,7 @@ Bella Ric. Ho copiato opieters in un altro folder e sto adattando alle mie foto.
   <div class="half-width gallery-preview {{ align }}">
     <h1>{{ gallery.title }}</h1>
     <a href="{{ site.url }}{{ site.baseurl }}/fotoricc/{{ gallery.directory }}.html">
-      <img alt="{{ gallery.title }}" src="{{ site.url }}{{ site.baseurl }}/assets/fotoricc/{% if gallery.picture_path %}{{ gallery.picture_path }}{% else %}{{ gallery.directory }}{% endif %}/{{ gallery.preview.thumbnail }}" />
+      <img alt="{{ gallery.title }}" src="{{ site.url }}{{ site.baseurl }}/assets/photography/{% if gallery.picture_path %}{{ gallery.picture_path }}{% else %}{{ gallery.directory }}{% endif %}/{{ gallery.preview.thumbnail }}" />
     </a>
   </div>
 {% if count == 1 %}</div>{% endif %}
