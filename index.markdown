@@ -8,7 +8,6 @@ title:  "Home"
 date:   2022-01-08 12:20:05 +0100
 categories: jekyll update
 ---
-{% include galheader.html %}
 
 Hi I'm SREccardo
 
@@ -16,11 +15,16 @@ I build this site with Jekyll.
 
 ## includiamo la Gallery
 
+dockerizzare la terza liberria
 
- {% include gal.html %}
+* npm install -g bower
+* bower install jquery lightgallery isotope
+
+Gallery creator code: https://gist.github.com/opieters/756c86fdad219867c0f4
+
+ma anche no per ora.
 
 
 ecco fatto
 
- {% include gal.html image="image-1.jpg" %}
 
