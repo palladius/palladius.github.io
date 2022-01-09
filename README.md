@@ -33,3 +33,7 @@ https://michaelsoolee.com/compile-jekyll-site-docker/
 ## Altre idee
 
 * dockerizza Jekyll con JRuby: Java.Graphviz/PlantUML: https://blog.frankel.ch/musings-dockerfile-jekyll/ usa jekylle  jruby, il tizio e' un genio. sito su gitlab.io (tipo github pages): https://nfrankel.gitlab.io/
+
+## Credits
+
+* Olivier Pieters (me@olivierpieters.be') for his beautiful jekyll gallery which I'm using.
