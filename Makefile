@@ -5,3 +5,7 @@ run-locally:
 
 docker-run:
 	./docker-run.sh
+
+
+create-alcumbs-automagically:
+	bin/enable-conda-env.sh 
