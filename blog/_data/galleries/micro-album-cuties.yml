@@ -1,11 +1,13 @@
 picture_path: micro-album-cuties
 pictures:
 - filename: riccardo
+  title: Riccardo and the Matterhorn
   original: riccardo-2669x2669.jpg
   sizes: []
   thumbnail: riccardo-2669x2669.jpg
 - filename: papa
   original: papa-2448x3264.jpg
+  title: Riccardo and AJ
   sizes: []
   thumbnail: papa-2448x3264.jpg
 - filename: seby

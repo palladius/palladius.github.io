@@ -7,10 +7,10 @@ support: [jquery, gallery]
 
 This example shows how to include several galleries into one page. Also notice that some captions have been set.
 
-{% include gallery-layout.html gallery=site.data.galleries.riccardo-micro-album-cuties id_number=1 %}
+{% include gallery-layout.html gallery=site.data.galleries.micro-album-cuties id_number=1 %}
 
 The pictures from part two:
 
-{% include gallery-layout.html gallery=site.data.galleries.ghent-light-festival-2 id_number=2 %}
+{# % include gallery-layout.html gallery=site.data.galleries.ghent-light-festival-2 id_number=2 % }
 
 [repo for Pasta]: https://github.com/palladius/pasta

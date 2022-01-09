@@ -4,12 +4,11 @@ title: RicGal Uetliberg ZNOW
 no_menu_item: true # required only for this example website because of menu construction
 support: [jquery, gallery]
 ---
-blah
+
+Today we went to Uetliberg (it was Alessandro idea). Seby had a bit of vomitino yesterday (probably the gorgonzola), but this morning he was perfectly fine.
 
 
-This example shows how to include several galleries into one page. Also notice that some captions have been set.
-
-{% include gallery-layout.html gallery=site.data.galleries.micro-album-cuties id_number=1 %}
+{% include gallery-layout.html gallery=site.data.galleries.20220109-snow-in-uetliberg id_number=1 %}
 
 
 [repo for Pasta]: https://github.com/palladius/pasta

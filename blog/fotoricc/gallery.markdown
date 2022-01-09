@@ -9,3 +9,5 @@ title: Ricc Gallery
 Questa cha banalmente il CONTENT. Di cosa, niusacciu.
 
 {{ content }}
+
+{% include gallery-layout.html gallery=site.data.galleries.micro-album-cuties %}
