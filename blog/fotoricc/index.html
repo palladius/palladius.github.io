@@ -1,20 +1,12 @@
 ---
 layout: default
-title: Photography di opieters
-permalink: /photography-opieters/
+title: FotoRicc Index
+permalink: /fotoricc/
 ---
 
 <h1>Bella Ricc</h1>
 
-Bella Ric. Mi piace questo opieters! 
-
-La galleria funziona da dio e ha uno script per creare yaml dalla galleria.
-
-https://github.com/opieters/jekyll-image-gallery-example
-
-Lo script in python e' qui: https://gist.github.com/opieters/756c86fdad219867c0f4
-
-<a href="https://gist.github.com/opieters/756c86fdad219867c0f4" >  script python gist</a>
+Bella Ric. Ho copiato opieters in un altro folder e sto adattando alle mie foto.
 
 
 <h2>{{ page.title }}</h2>
@@ -23,12 +15,12 @@ Lo script in python e' qui: https://gist.github.com/opieters/756c86fdad219867c0f
 
 {% assign count = 0 %}
 {% assign align = "left" %}
-{% for gallery in site.data.galleries.overview %}
+{% for gallery in site.data.galleries.ricc-overview %}
 {% if count == 0 %}<div class="row">{% endif %}
   <div class="half-width gallery-preview {{ align }}">
     <h1>{{ gallery.title }}</h1>
-    <a href="{{ site.url }}{{ site.baseurl }}/photography-opieters/{{ gallery.directory }}.html">
-      <img alt="{{ gallery.title }}" src="{{ site.url }}{{ site.baseurl }}/assets/photography/{% if gallery.picture_path %}{{ gallery.picture_path }}{% else %}{{ gallery.directory }}{% endif %}/{{ gallery.preview.thumbnail }}" />
+    <a href="{{ site.url }}{{ site.baseurl }}/fotoricc/{{ gallery.directory }}.html">
+      <img alt="{{ gallery.title }}" src="{{ site.url }}{{ site.baseurl }}/assets/fotoricc/{% if gallery.picture_path %}{{ gallery.picture_path }}{% else %}{{ gallery.directory }}{% endif %}/{{ gallery.preview.thumbnail }}" />
     </a>
   </div>
 {% if count == 1 %}</div>{% endif %}

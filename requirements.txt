@@ -1,2 +1,3 @@
+# needed to generate image gallery
 imagesize
 pyyaml

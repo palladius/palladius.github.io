@@ -1,6 +1,6 @@
 ---
 layout: gallery
-title: SFO gallery
+title: SFO gallery TOGLIMI
 support: [jquery, gallery]
 ---
 
