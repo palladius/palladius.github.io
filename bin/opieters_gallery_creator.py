@@ -120,7 +120,7 @@ def buridone_by_olivierpieters(output_file, input_file, image_path, extensions )
 def main():
     print("== opeters YAML creator ==\n")
     # configuration
-    output_file = "riccardo-prova-output.yml"
+    output_file = "blog/_data/galleries/riccardo-micr-album-cuties.yml"
     #input_file = "riccardo-prova-input.yml"
     input_file = output_file
     image_path = "micro-album-cuties"
