@@ -25,3 +25,7 @@ create-alcumbs-automagically:
 
 galleries:
 	~/miniconda/envs/sreccardo-blog-env/bin/python bin/opieters_gallery_creator.py 
+
+run-in-prod-on-gce:
+	cd blog && jekyll serve --port 4001 --host my_hostname_or_ip
+
