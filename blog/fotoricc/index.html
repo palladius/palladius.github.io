@@ -19,7 +19,8 @@ Bella Ric. Ho copiato opieters in un altro folder e sto adattando alle mie foto.
 {% if count == 0 %}<div class="row">{% endif %}
   <div class="half-width gallery-preview {{ align }}">
     <h1>{{ gallery.title }}</h1>
-    <a href="{{ site.url }}{{ site.baseurl }}/fotoricc/{{ gallery.directory }}.html">
+    <p><i>Descrizione: {{ gallery.descrizione }}</i></p>
+    <a href="{{ site.url }}{{ site.baseurl }}/fotoricc/galleries/{{ gallery.directory }}.html">
       <img alt="{{ gallery.title }}" src="{{ site.url }}{{ site.baseurl }}/assets/photography/{% if gallery.picture_path %}{{ gallery.picture_path }}{% else %}{{ gallery.directory }}{% endif %}/{{ gallery.preview.thumbnail }}" />
     </a>
   </div>

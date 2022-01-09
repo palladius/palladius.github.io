@@ -1,6 +1,7 @@
 
 APPNAME = sreccardo-blog
 VERSION = $(shell cat blog/VERSION)
+PROJECT_ID = 7eptober
 
 run-locally:
 	cd blog && make run
@@ -9,11 +10,14 @@ docker-run-stateless:
 	./docker-run.sh
 
 docker-build:
-	docker build -t $(APPNAME):v$(VERSION) .
+	docker build -t $(APPNAME):v$(VERSION) . | tee t.docker-latest-run.log
+	docker tag $(APPNAME):v$(VERSION) gcr.io/7eptober/$(APPNAME):v$(VERSION)
+docker-push:
+	docker push gcr.io/$(PROJECT_ID)/$(APPNAME):v$(VERSION)
 docker-run:
-	docker run -it -p 8080:8080 -t $(APPNAME):v$(VERSION) 
+	docker run -it -p 8080:8080  --env-file docker-prod.env -t $(APPNAME):v$(VERSION) jekyll serve -P 8080 -s ./
 docker-run-bash:
-	docker run -it -p 8080:8080 -t $(APPNAME):v$(VERSION) bash
+	docker run -it -p 8080:8080  --env-file docker-prod.env -t $(APPNAME):v$(VERSION) bash
 
 
 create-alcumbs-automagically:

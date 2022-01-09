@@ -1,6 +1,8 @@
 -
  title: Micro Album cuties
  directory: micro-album-cuties
+ descrizione: |
+   A few images from my cuties
  preview:
   filename: seby-3262x4567.jpg
   original: seby-3262x4567.jpg
@@ -13,6 +15,11 @@
  #
  title: Uetliberg with snow!
  directory: 20220109-snow-in-uetliberg
+ descrizione: |
+   Today it was snowy in Uetliberg and my son AJ decided
+   to go to Uetliberg. We ddidnt want to but decided to go nonetheless.
+   Turned out to be a good idea. We should have dressed with more snowwear
+   and had AJ sledge with us. But it was SO beautiful!
  preview:
   filename: PXL_20220109_091406343.jp
   original: PXL_20220109_091406343.jp-3840x2880.jpg
@@ -25,6 +32,8 @@
   title: (RiccOverviewYaml) Tutto il 2021
   directory: riccardo-2021
   picture_path: riccardo-2021
+  descrizione: |
+    All 2021 for Riccardo traken from STARRED Gphotos images.
   preview:
     filename: PXL_20210721_152004677.PORTRAIT.jp-4032x3024.jpg # carino japano
     original: riccardo-2021/PXL_20210801_074155532-1000x1000.jpg # bellissimo quadrato
@@ -35,6 +44,9 @@
  title: A More Complicated Example Gallery
  directory: ghent-light-festival
  picture_path: ghent-light-festival/part1
+ descrizione: |
+  I'll leave it here until i understand how it works. i believe its
+  a bifidous double gallery. note this is NOT my stuff, but original gallery creator :)
  preview:
   filename: Lichtfestival-0058
   original: Lichtfestival-0058-6000x4000.jpg

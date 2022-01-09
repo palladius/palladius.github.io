@@ -1,6 +1,7 @@
 ---
 layout: gallery
 title: RicGal Riccardo 2021 (enorme)
+no_menu_item: true
 #no_menu_item: true # required only for this example website because of menu construction
 support: [jquery, gallery]
 ---
