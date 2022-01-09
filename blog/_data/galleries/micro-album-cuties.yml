@@ -1,0 +1,14 @@
+picture_path: micro-album-cuties
+pictures:
+- filename: riccardo
+  original: riccardo-2669x2669.jpg
+  sizes: []
+  thumbnail: riccardo-2669x2669.jpg
+- filename: papa
+  original: papa-2448x3264.jpg
+  sizes: []
+  thumbnail: papa-2448x3264.jpg
+- filename: seby
+  original: seby-3262x4567.jpg
+  sizes: []
+  thumbnail: seby-3262x4567.jpg

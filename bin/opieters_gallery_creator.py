@@ -30,7 +30,7 @@ def buridone_by_olivierpieters(output_file, input_file, image_path, extensions )
       ext=extensions,
       ip=image_path
   ))
-  return 42
+  #return 42
   # extract image files
   print('Collecting files...')
   files = [f for f in listdir(path) if isfile(join(path, f))]

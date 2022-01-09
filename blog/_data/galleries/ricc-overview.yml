@@ -10,16 +10,16 @@
   - VS-2012-6088-2999x1999.jpg
   thumbnail: VS-2012-6088-thumbnail.jpg
 - 
- title: RiOv Esempio del menga 2 (Uetli neve)
- directory: micro-album-cuties
+ title: RiOv Esempio del menga 2 (Uetli neve ma non va)
+ directory: 20220109-snow-in-uetliberg
  preview:
-  filename: VS-2012-6088
-  original: VS-2012-6088-6000x4000.jpg
+  filename: PXL_20220109_091406343.jp
+  original: PXL_20220109_091406343.jp-3840x2880.jpg
   sizes:
-  - VS-2012-6088-4242x2828.jpg
-  - VS-2012-6088-2121x1414.jpg
-  - VS-2012-6088-2999x1999.jpg
-  thumbnail: VS-2012-6088-thumbnail.jpg
+#  - VS-2012-6088-4242x2828.jpg
+#  - VS-2012-6088-2121x1414.jpg
+  - PXL_20220109_091406343.jp-3840x2880.jpg
+  thumbnail: PXL_20220109_091406343.jp-3840x2880.jpg
 # -
 #  title: RiOv esempio complicato
 #  directory: ghent-light-festival
