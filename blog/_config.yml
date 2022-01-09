@@ -62,11 +62,12 @@ exclude:
   - Makefile
   - Dockerfile
   - 3rdparty/
-#   - .sass-cache/
-#   - .jekyll-cache/
-#   - gemfiles/
-#   - node_modules/
-#   - vendor/bundle/
-#   - vendor/cache/
-#   - vendor/gems/
-#   - vendor/ruby/
+  - entrypoint-8080.sh
+  - .sass-cache/
+  - .jekyll-cache/
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+  - gemfiles/
+  - node_modules/

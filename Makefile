@@ -1,11 +1,7 @@
 
 
+run-locally:
+	cd blog && make run
 
-run-dev:
-	bundle exec jekyll serve --livereload
-	
-run:
-	bundle exec jekyll serve
-
-install:
-	bundle install
+docker-run:
+	./docker-run.sh

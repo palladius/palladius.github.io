@@ -1,6 +1,6 @@
 ---
 layout: gallery
-title: A Very Basic Example on SFO gallery
+title: SFO gallery
 support: [jquery, gallery]
 ---
 
