@@ -87,8 +87,10 @@ def buridone_by_olivierpieters(output_file, input_file, image_path, extensions )
           thumbs[image_set] = thumbnail
 
   # try to load YAML data
-  print('Checking existing YAML data...')
+  print('Checking existing YAML data for input_file: {}...\n'.format(input_file))
   if isfile(input_file):
+      print("it exists! Nothing to do here. I return")
+      return
       input_gallery = yaml.load(open(input_file, 'r'))
   else:
       # create empty dummy file
@@ -131,7 +133,7 @@ def enumerate_ricc_folders(mypath):
 
 def main():
     avoid_these_folder = [
-        'riccardo-2021', # too big per ora. spezzimolo..
+       # 'riccardo-2021', # too big per ora. spezzimolo..
     ]
     print("== Ricc AutoFolder finder ==\n")
     folder_names = enumerate_ricc_folders("blog/assets/fotoric/")
