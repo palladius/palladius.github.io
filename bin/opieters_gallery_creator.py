@@ -24,7 +24,13 @@ from os.path import isfile, join
 def buridone_by_olivierpieters(output_file, input_file, image_path, extensions ):
   # set correct path
   path = join(BasePath, image_path)
-
+  print("DEB buridone_by_olivierpieters(output_file={of}, input_file={inf}, image_path={ip}, extensions={ext} ): ".format(
+      of=output_file,
+      inf=input_file,
+      ext=extensions,
+      ip=image_path
+  ))
+  return 42
   # extract image files
   print('Collecting files...')
   files = [f for f in listdir(path) if isfile(join(path, f))]
@@ -116,17 +122,34 @@ def buridone_by_olivierpieters(output_file, input_file, image_path, extensions )
       f.write( yaml.dump(input_gallery, default_flow_style=False) )
 
     
+def enumerate_ricc_folders(mypath):
+    from os import listdir
+    from os.path import isfile, join, isdir
+    onlyfiles = [f for f in listdir(mypath) if isdir(join(mypath, f))]
+    #arr = [ 123 ]
+    return onlyfiles
 
 def main():
-    print("== opeters YAML creator ==\n")
-    # configuration
-    output_file = "blog/_data/galleries/riccardo-micro-album-cuties.yml"
-    #input_file = "riccardo-prova-input.yml"
-    input_file = output_file
-    image_path = "micro-album-cuties"
-    #image_path = "riccardo-2021"
+    avoid_these_folder = [
+        'riccardo-2021', # too big per ora. spezzimolo..
+    ]
+    print("== Ricc AutoFolder finder ==\n")
+    folder_names = enumerate_ricc_folders("blog/assets/fotoric/")
+    print("folder_names: ", folder_names)
     extensions= ['jpg', 'png', 'gif']
-    buridone_by_olivierpieters(output_file, input_file, image_path, extensions )
+    print("== opeters YAML creator ==\n")
+    for pix_subfolder in folder_names:
+        # configuration
+        output_file = "blog/_data/galleries/{f}.yml".format(f=pix_subfolder) 
+        input_file = output_file
+        image_path = pix_subfolder # "micro-album-cuties"         #image_path = "riccardo-2021"
+        if pix_subfolder in avoid_these_folder:
+            print("ATTENZIONE SKIPPO: ", pix_subfolder)
+            next
+            #break
+        else:
+            #print("non skippo: ", pix_subfolder)
+            buridone_by_olivierpieters(output_file, input_file, image_path, extensions )
 
 #print("vediamo\n")
 main()
