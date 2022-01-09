@@ -40,6 +40,7 @@ https://michaelsoolee.com/compile-jekyll-site-docker/
 
 * github pages
 * http://jekyllbootstrap.com/
+* GCE:  dns-setup-palladius.sh blog.palladi.us 34.65.197.18
 
 ## Credits
 
