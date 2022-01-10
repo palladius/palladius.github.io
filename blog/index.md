@@ -13,6 +13,9 @@ Hi I'm SREccardo
 
 I build this site with Jekyll.
 
+![image tooltip here](/assets/image.jpg)
+
+<!-- 
 ## includiamo la Gallery
 
 dockerizzare la terza liberria
@@ -27,4 +30,5 @@ ma anche no per ora.
 
 ecco fatto
 
+-->
 

@@ -27,5 +27,6 @@ galleries:
 	~/miniconda/envs/sreccardo-blog-env/bin/python bin/opieters_gallery_creator.py 
 
 run-in-prod-on-gce:
-	cd blog && bundle exec jekyll serve --port 8080 --host 0.0.0.0
+	JEKYLL_ENV=production cd blog && bundle exec jekyll serve --port 8080 --host 0.0.0.0
+	#JEKYLL_ENV=production jekyll serve --watch --source ~/git/palladius.github.io/blog -B
 

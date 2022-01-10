@@ -1,10 +1,12 @@
 #!/bin/bash
 
-yellow Ricky Devo farlo andare da directory blog/
+yellow Ricky Devo farlo andare da directory blog/. In prod usa: JEKYLL_ENV=production
 
 #export JEKYLL_VERSION=3.8
 export JEKYLL_VERSION=4.2.0
 # available tags: https://hub.docker.com/r/jekyll/jekyll/tags
+
+
 
 # docker run --rm \
 #   --volume="$PWD/blog:/srv/jekyll" \
