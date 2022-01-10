@@ -36,12 +36,12 @@ https://michaelsoolee.com/compile-jekyll-site-docker/
 * dockerizza Jekyll con JRuby: Java.Graphviz/PlantUML: https://blog.frankel.ch/musings-dockerfile-jekyll/ usa jekylle  jruby, il tizio e' un genio. sito su gitlab.io (tipo github pages): https://nfrankel.gitlab.io/
 * migra da wordpress a jekyll: https://github.com/some-programs/exitwp
 
-## hosting
+## hosting in PROD
 
 * github pages
 * http://jekyllbootstrap.com/
 * GCE:  dns-setup-palladius.sh blog.palladi.us 34.65.197.18 => http://blog.palladi.us/
-
+* Create service: https://gist.github.com/yuan3y/51f6534c9daaa2f64baa64e1a3c361aa in `/etc/systemd/system/jekyll.service`
 
 ## Credits
 

@@ -32,3 +32,15 @@ ecco fatto
 
 -->
 
+# Icons
+
+I love UTF-8 emojis like:
+
+* ☝️ 1 command to install
+
+* 👨‍💻 Ready to production and local development #sifaperdire
+
+* ⚡ Performance Optimized
+
+* 🔒 SSL auto-renewed
+
