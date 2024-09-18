@@ -1,14 +1,17 @@
 # Ricc Jekyll website
 
-Dono un po' confuso da jekyll e o suoi file quindi ho messo tutto sotto BLOG.
-Adesso fuori da li ci metto liberie di vendors, dockerizzazione etc. Ovviamente lascio dentro 
-quelle piccole cose che dEVONO stare dentro come l'entrypoint per docker :)
+Self: http://blog.palladi.us/
+
+Sono un po' confuso da jekyll e o suoi file quindi ho messo tutto sotto BLOG.
+
+Adesso fuori da li ci metto liberie di vendors, dockerizzazione etc. Ovviamente lascio dentro
+quelle piccole cose che *devono* stare dentro come l'`entrypoint` per docker :)
 
 ## Image Gallery
 
 https://olivierpieters.be/blog/2016/02/26/creating-a-jekyll-image-gallery
 
-installa le dipendenze con bower:
+installa le dipendenze con `bower`:
 
 ```
 First off, we need to install both libraries. You can do that on your own by downloading the source code on GitHub, but using a dependency manager is much easier. I will use bower. So run:
@@ -27,7 +30,9 @@ fporse basta apche o nginx.
 
 https://michaelsoolee.com/compile-jekyll-site-docker/
 
+```bash
     docker run --rm -it --volume="$PWD:/srv/jekyll" --volume="$PWD/vendor/bundle:/usr/local/bundle" --env JEKYLL_ENV=production jekyll/jekyll:4.0 jekyll build
+```
 
 * usa docker per evitare di usare jekyll: utilissime idee e va letto tutto. https://dev.to/michael/compile-a-jekyll-project-without-installing-jekyll-or-ruby-by-using-docker-4184
 
