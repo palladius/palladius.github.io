@@ -1,6 +1,9 @@
 # Ricc Jekyll website
 
-Self: http://blog.palladi.us/
+Self:
+
+* Repo: https://github.com/palladius/palladius.github.io/
+* Blog: http://blog.palladi.us/
 
 Sono un po' confuso da jekyll e o suoi file quindi ho messo tutto sotto BLOG.
 
