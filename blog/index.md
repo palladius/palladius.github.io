@@ -5,17 +5,19 @@
 layout: home
 #layout: post
 title:  "Home"
-date:   2022-01-08 12:20:05 +0100
+#date:   2022-01-08 12:20:05 +0100
+date:   2023-10-19 12:20:05 +0100
 categories: jekyll update
 ---
+*Last updated: 2023-10-19*
 
-Hi I'm SREccardo
+Hi I'm SREccardo aka palladius.
 
-I build this site with Jekyll.
+I built this site with Jekyll.
 
-![image tooltip here](/assets/image.jpg)
+![Foto di Alessandro da piccolino](/assets/immagini/riccardume/hqdefault2.jpeg)
 
-<!-- 
+<!--
 ## includiamo la Gallery
 
 dockerizzare la terza liberria
@@ -37,10 +39,7 @@ ecco fatto
 I love UTF-8 emojis like:
 
 * ☝️ 1 command to install
-
 * 👨‍💻 Ready to production and local development #sifaperdire
-
 * ⚡ Performance Optimized
-
 * 🔒 SSL auto-renewed
 
