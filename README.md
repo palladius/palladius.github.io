@@ -20,6 +20,10 @@ As of Oct 2024, this is becoming part of my greater vision go/ricc-rikiwiki: wri
 * https://olivierpieters.be/blog/2016/02/26/creating-a-jekyll-image-gallery
 * install deps w/ bower: see `OTHER-IDEAS.md`
 
+## Auto-build
+
+Not sure if it works at all. Looks like its stuck.
+
 ## productionization
 
 See `OTHER-IDEAS.md`
