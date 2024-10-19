@@ -4,52 +4,25 @@ Self:
 
 * Repo: https://github.com/palladius/palladius.github.io/
 * Blog: http://blog.palladi.us/
+* RiccDoc: go/pbt-rickywiki
 
-Sono un po' confuso da jekyll e o suoi file quindi ho messo tutto sotto BLOG.
+Folder organization:
 
-Adesso fuori da li ci metto liberie di vendors, dockerizzazione etc. Ovviamente lascio dentro
-quelle piccole cose che *devono* stare dentro come l'`entrypoint` per docker :)
+* All jekyll files under `blog/`
+* Everything that helps building it is outside except what NEEDS tp be there like entrypoint.
+
+## Vision
+
+As of Oct 2024, this is becoming part of my greater vision go/ricc-rikiwiki: write once, use Gemini, push everywhere.
 
 ## Image Gallery
 
-https://olivierpieters.be/blog/2016/02/26/creating-a-jekyll-image-gallery
+* https://olivierpieters.be/blog/2016/02/26/creating-a-jekyll-image-gallery
+* install deps w/ bower: see `OTHER-IDEAS.md`
 
-installa le dipendenze con `bower`:
+## productionization
 
-```
-First off, we need to install both libraries. You can do that on your own by downloading the source code on GitHub, but using a dependency manager is much easier. I will use bower. So run:
-
-bower install jquery lightgallery isotope
-
-There also is a save option (--save) ensures these dependencies are saved to a bower.json file. I configured bower to install these dependencies into my assets folder. You can do this by setting "directory" : "assets" in your .bowerrc file. This is the workflow followed in the Github repo.
-
-After installing the dependencies, make sure you are using the latest version of Jekyll too, since what will follow has only been tested on Jekyll 3.0.1.
-```
-
-## dockerizzazione PROD
-
-Penso che jekyll usi docker per fare una build CLEANc he poi mette i file statici. Una volta fatto jekyol non sserve piu a una cippa :)
-fporse basta apche o nginx.
-
-https://michaelsoolee.com/compile-jekyll-site-docker/
-
-```bash
-    docker run --rm -it --volume="$PWD:/srv/jekyll" --volume="$PWD/vendor/bundle:/usr/local/bundle" --env JEKYLL_ENV=production jekyll/jekyll:4.0 jekyll build
-```
-
-* usa docker per evitare di usare jekyll: utilissime idee e va letto tutto. https://dev.to/michael/compile-a-jekyll-project-without-installing-jekyll-or-ruby-by-using-docker-4184
-
-## Altre idee
-
-* dockerizza Jekyll con JRuby: Java.Graphviz/PlantUML: https://blog.frankel.ch/musings-dockerfile-jekyll/ usa jekylle  jruby, il tizio e' un genio. sito su gitlab.io (tipo github pages): https://nfrankel.gitlab.io/
-* migra da wordpress a jekyll: https://github.com/some-programs/exitwp
-
-## hosting in PROD
-
-* github pages
-* http://jekyllbootstrap.com/
-* GCE:  dns-setup-palladius.sh blog.palladi.us 34.65.197.18 => http://blog.palladi.us/
-* Create service: https://gist.github.com/yuan3y/51f6534c9daaa2f64baa64e1a3c361aa in `/etc/systemd/system/jekyll.service`
+See `OTHER-IDEAS.md`
 
 ## Credits
 
