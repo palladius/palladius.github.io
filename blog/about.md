@@ -7,4 +7,6 @@ permalink: /about/
 
 ## About me
 
-Piano player, Googler, wine drinker, extrovert yellow-lover.
+Piano player, Googler, Amarone drinker, extrovert yellow-lover.
+
+More info:

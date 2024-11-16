@@ -1,3 +1,5 @@
-blog/assets
-blog/assets/photography/
-blog/_site/
+#blog/assets
+#blog/assets/photography/
+#blog/_site/
+
+# Dato che non trova _includes/gallery-layout.html , proviamo a commentare sta robba..
