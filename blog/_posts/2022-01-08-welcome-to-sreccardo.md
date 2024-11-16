@@ -27,7 +27,6 @@ Immagini di Alessandro:
 {% for myimage in image_files %}
   {% if  myimage.path contains 'aj' -%}
       <img src="{{ myimage.path }}" height="200" alt="{{ myimage.path }}" />
-
   {% endif %}
 {% endfor %}
 
