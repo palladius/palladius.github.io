@@ -2,10 +2,10 @@
 
 
 run-dev:
-	bundle exec jekyll serve --livereload
-	
+	bundle exec jekyll serve --livereload --trace
+
 run:
-	bundle exec jekyll serve
+	bundle exec jekyll serve --trace
 
 install:
 	bundle install

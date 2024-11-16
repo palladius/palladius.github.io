@@ -2,7 +2,10 @@
 layout: post
 title:  "Welcome to SREccardo!"
 ---
+
 {% assign image_files = site.static_files | where: "image", true %}
+
+2024: addon.
 
 # Welcome
 
@@ -34,7 +37,7 @@ Immagini di Alessandro:
 
 {% for myimage in image_files %}
   <img src="{{ myimage.path }}" height="80" alt="{{ myimage.path }}" />
-  <!-- 
+  <!--
   {{ myimage.path }}
   #  ! [ metto altezza ] ( { { myimage.path } } )
   -->
