@@ -28,6 +28,16 @@ Not sure if it works at all. Looks like its stuck.
 
 See `OTHER-IDEAS.md`
 
+## Themes
+
+By default I use `minima`. Some free ones I like:
+
+1. https://jekyllthemes.io/theme/minimal-mistakes 12.4k stars on [github](https://github.com/mmistakes/minimal-mistakes).
+2. https://jekyllthemes.io/theme/online-cv 3.2k stars on [github](https://github.com/sharu725/online-cv). Great for a CV online
+3. https://jekyllthemes.io/theme/feeling-responsive 898stars on [github](https://github.com/Phlow/feeling-responsive)
+
+Maybe I could start with the first one?
+
 ## Credits
 
 * Olivier Pieters (me@olivierpieters.be') for his beautiful jekyll gallery which I'm using.
