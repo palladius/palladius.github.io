@@ -4,3 +4,6 @@ bower_components/
 .ondir.was.here.touch
 .echodo_history
 _site/
+.sass-cache
+.jekyll-cache
+.jekyll-metadata
