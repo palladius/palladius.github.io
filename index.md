@@ -7,6 +7,7 @@ title:  "Home"
 date:   2023-10-19 12:20:05 +0100
 categories: jekyll update
 ---
+
 *Last updated: 2023-10-19*
 
 Hi I'm [SREccardo](https://x.com/sreccardo) aka [palladius](https://x.com/palladius).
@@ -15,11 +16,15 @@ As a Rubyist, I built this site with Jekyll.
 
 ![Foto di Alessandro da piccolino](/assets/immagini/riccardume/hqdefault2.jpeg)
 
-TODO: I still need to understand what pushes this to http://blog.palladi.us/ :
+Pushes to http://blog.palladi.us/ are made through Github pages:
 
-* Netlify?
-* github?
-
+1. **Netlify**. I just started on 17nov24.
+    * jekyll-sreccardo.netlify.app
+    * Pointing to this new amazing theme: `.themes/feeling-responsive/`
+2. **github pages**:
+    * Github actions: https://github.com/palladius/palladius.github.io/actions
+    * Goes to: [palladius.github.io](https://palladius.github.io/) (ugly no CSS)
+3. **GCP**. I believe there's a third thingy on GCP where I dockerize and push to `blog.palladi.us`, I just can't recall from which Cloud Build :)
 
 # Icons
 
