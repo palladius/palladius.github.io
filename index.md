@@ -21,6 +21,7 @@ Pushes to http://blog.palladi.us/ are made through Github pages:
 1. **Netlify**. I just started on 17nov24.
     * [jekyll-sreccardo.netlify.app](https://jekyll-sreccardo.netlify.app/)
     * Pointing to this new amazing theme: `.themes/feeling-responsive/`
+    * Currently broken.
 2. **github pages**:
     * Github actions: https://github.com/palladius/palladius.github.io/actions
     * Goes to: [palladius.github.io](https://palladius.github.io/) (ugly no CSS)
