@@ -36,6 +36,8 @@ linkedin_username: riccardocarlesso
 linkedin: riccardocarlesso
 blog: 'https://ricc.rocks/'
 
+destination: palladius.github.io/
+
 # Build settings
 theme: minima
 plugins:
