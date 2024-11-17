@@ -4,7 +4,7 @@ VERSION = $(shell cat blog/VERSION)
 PROJECT_ID = 7eptober
 
 run-locally-2024:
-	jekyll serve --source palladius.github.io/
+	jekyll serve  # --source palladius.github.io/
 
 # run-locally:
 # 	cd blog && make run
