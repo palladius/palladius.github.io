@@ -19,7 +19,7 @@ As a Rubyist, I built this site with Jekyll.
 Pushes to http://blog.palladi.us/ are made through Github pages:
 
 1. **Netlify**. I just started on 17nov24.
-    * jekyll-sreccardo.netlify.app
+    * [jekyll-sreccardo.netlify.app](https://jekyll-sreccardo.netlify.app/)
     * Pointing to this new amazing theme: `.themes/feeling-responsive/`
 2. **github pages**:
     * Github actions: https://github.com/palladius/palladius.github.io/actions
