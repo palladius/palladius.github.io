@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Welcome to SREccardo!"
+title:  "Welcome to SREccardo! 2024"
 ---
 
 {% assign image_files = site.static_files | where: "image", true %}
