@@ -8,7 +8,7 @@ date:   2023-10-19 12:20:05 +0100
 categories: jekyll update
 ---
 
-*Last updated: 2023-10-19*
+*Last updated: 2024-11-17*
 
 Hi I'm [SREccardo](https://x.com/sreccardo) aka [palladius](https://x.com/palladius).
 
@@ -26,6 +26,12 @@ Pushes to http://blog.palladi.us/ are made through Github pages:
     * Github actions: https://github.com/palladius/palladius.github.io/actions
     * Goes to: [palladius.github.io](https://palladius.github.io/) (ugly no CSS)
 3. **GCP**. I believe there's a third thingy on GCP where I dockerize and push to `blog.palladi.us`, I just can't recall from which Cloud Build :)
+
+## Bugs
+
+Looks lovely in localhost, but super ugly when deployed from Netlify and in my docker way. Dont know why.
+
+Some CSS settings maybe?
 
 # Icons
 
