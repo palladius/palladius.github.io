@@ -32,12 +32,19 @@ description: >- # this means to ignore newlines until "baseurl:"
 twitter_username: sreccardo
 github_username:  palladius
 linkedin_username: riccardocarlesso
+youtube_username: palladiusbonton
+rss: rss
+
 # quello sopra non funge proviamo questo: :)
 linkedin: riccardocarlesso
 blog: 'https://ricc.rocks/'
 
 #source: palladius.github.io/
 #destination: palladius.github.io/
+
+# https://github.com/jekyll/minima/issues/815
+sass:
+  quiet_deps: true
 
 # Build settings
 theme: minima
