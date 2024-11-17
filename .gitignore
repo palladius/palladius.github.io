@@ -3,3 +3,4 @@ vendor
 bower_components/
 .ondir.was.here.touch
 .echodo_history
+_site/

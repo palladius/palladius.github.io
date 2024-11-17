@@ -3,11 +3,14 @@ APPNAME = sreccardo-blog
 VERSION = $(shell cat blog/VERSION)
 PROJECT_ID = 7eptober
 
-run-locally:
-	cd blog && make run
+run-locally-2024:
+	jekyll serve --source palladius.github.io/
 
-docker-run-stateless:
-	./docker-run.sh
+# run-locally:
+# 	cd blog && make run
+
+# docker-run-stateless:
+# 	./docker-run.sh
 
 docker-build:
 	docker build -t $(APPNAME):v$(VERSION) . | tee t.docker-latest-run.log
@@ -20,11 +23,11 @@ docker-run-bash:
 	docker run -it -p 8080:8080  --env-file docker-prod.env -t $(APPNAME):v$(VERSION) bash
 
 
-create-alcumbs-automagically:
-	bin/enable-conda-env.sh 
+# create-alcumbs-automagically:
+# 	bin/enable-conda-env.sh
 
-galleries:
-	~/miniconda/envs/sreccardo-blog-env/bin/python bin/opieters_gallery_creator.py 
+# galleries:
+# 	~/miniconda/envs/sreccardo-blog-env/bin/python bin/opieters_gallery_creator.py
 
 run-in-prod-on-gce:
 	JEKYLL_ENV=production cd blog && bundle exec jekyll serve --port 8080 --host 0.0.0.0
