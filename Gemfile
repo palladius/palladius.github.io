@@ -6,11 +6,21 @@ source "https://rubygems.org"
 #     bundle exec jekyll serve
 #
 # This will help ensure the proper Jekyll version is running.
+#gem 'github-pages'
 
 # Happy Jekylling!
-gem "jekyll"
+#gem "jekyll"
+gem 'jekyll', '~> 3.1', '>= 3.1.2'
+
 # Copied from https://www.netlify.com/blog/2015/11/06/a-step-by-step-guide-jekyll-netlify-cms/
 gem 'jekyll-sitemap'
+
+# Food for thought: https://github.com/bdougie/portfolio-template/blob/master/Gemfile
+# gem "octopress-minify-html"
+# gem "jekyll-srcset", "0.1.3"
+# gem 'jekyll-feed'
+# gem 'jekyll-paginate'
+# gem 'redcarpet'
 
 # This is the default theme for new Jekyll sites. You may change this to anything you like.
 gem "minima"
