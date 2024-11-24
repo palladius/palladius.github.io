@@ -1,5 +1,7 @@
 # Ricc Jekyll website
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/fcb66aec-9841-45ec-90b6-951e47808d88/deploy-status)](https://app.netlify.com/sites/sreccardo-blog/deploys)
+
 Self:
 
 * SRC Repo: https://github.com/palladius/palladius.github.io/

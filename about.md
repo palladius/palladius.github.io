@@ -7,6 +7,6 @@ permalink: /about/
 
 ## About me
 
-Piano player, Googler, Amarone drinker, extrovert yellow-lover.
+🎹 Piano player, 🔵🔴🟢🟡 Googler, 🍷 Amarone drinker, extrovert 💛 yellow-lover.
 
-More info:
+More [info](https://ricc.rocks/).

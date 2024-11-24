@@ -3,8 +3,10 @@ APPNAME = sreccardo-blog
 VERSION = $(shell cat blog/VERSION)
 PROJECT_ID = 7eptober
 
+# added watch, not sure why SERVE and SERVER both work!
 run-locally-2024:
-	bundle exec jekyll serve
+#	bundle exec jekyll serve
+	bundle exec jekyll server --watch
 
 entrypoint-test:
 	RICCARDO_BLOG_URL=https://sreccardo-blog.netlify.app/ RICCARDO_FAVORITE_COLOR=fuxia ./entrypoint-8080.sh

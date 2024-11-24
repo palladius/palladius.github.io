@@ -3,12 +3,12 @@
 # To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 layout: home
 #layout: post
-title:  "Home"
-date:   2023-10-19 12:20:05 +0100
+title:  "🎁 Home"
+date:   2024-11-24 12:20:05 +0100
 categories: jekyll update
 ---
 
-*Last updated: 2024-11-17*
+*Last updated: 2024-11-24*
 
 Hi I'm [SREccardo](https://x.com/sreccardo) aka [palladius](https://x.com/palladius).
 
@@ -19,8 +19,7 @@ As a Rubyist, I built this site with Jekyll.
 Pushes to http://blog.palladi.us/ are made through Github pages:
 
 1. **Netlify**. I just started on 17nov24.
-    * [jekyll-sreccardo.netlify.app](https://jekyll-sreccardo.netlify.app/) WRONG
-    * https://sreccardo-blog.netlify.app/ CORRECT
+    * [sreccardo-blog.netlify.app](https://sreccardo-blog.netlify.app/)
     * Pointing to this new amazing theme: `.themes/feeling-responsive/`
     * Currently broken.
 2. **github pages**:
