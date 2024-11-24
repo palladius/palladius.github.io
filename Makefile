@@ -6,6 +6,8 @@ PROJECT_ID = 7eptober
 run-locally-2024:
 	bundle exec jekyll serve  # --source palladius.github.io/
 
+enterypoint-test:
+	RICCARDO_BLOG_URL=https://sreccardo-blog.netlify.app/ RICCARDO_FAVORITE_COLOR=fuxia ./entrypoint-8080.sh
 # run-locally:
 # 	cd blog && make run
 

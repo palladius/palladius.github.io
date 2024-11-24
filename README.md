@@ -2,8 +2,9 @@
 
 Self:
 
-* Repo: https://github.com/palladius/palladius.github.io/
-* Blog: http://blog.palladi.us/
+* SRC Repo: https://github.com/palladius/palladius.github.io/
+* DST Blog: http://blog.palladi.us/
+* DST Netlified into: https://sreccardo-blog.netlify.app/
 * RiccDoc: go/pbt-rickywiki
 
 Folder organization:
