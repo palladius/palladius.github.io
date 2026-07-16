@@ -11,8 +11,8 @@ Self:
 
 Folder organization:
 
-* All jekyll files under `blog/`
-* Everything that helps building it is outside except what NEEDS tp be there like entrypoint.
+* All jekyll files are in the root directory.
+* Everything that helps building it is outside except what NEEDS to be there like entrypoint.
 
 ## Vision
 

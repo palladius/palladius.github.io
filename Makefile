@@ -1,6 +1,6 @@
 
 APPNAME = sreccardo-blog
-VERSION = $(shell cat blog/VERSION)
+VERSION = $(shell cat VERSION)
 PROJECT_ID = 7eptober
 
 # added watch, not sure why SERVE and SERVER both work!
@@ -11,7 +11,7 @@ run-locally-2024:
 entrypoint-test:
 	RICCARDO_BLOG_URL=https://sreccardo-blog.netlify.app/ RICCARDO_FAVORITE_COLOR=fuxia ./entrypoint-8080.sh
 # run-locally:
-# 	cd blog && make run
+# 	make run
 
 # docker-run-stateless:
 # 	./docker-run.sh
@@ -34,8 +34,8 @@ docker-run-bash:
 # 	~/miniconda/envs/sreccardo-blog-env/bin/python bin/opieters_gallery_creator.py
 
 run-in-prod-on-gce:
-	JEKYLL_ENV=production cd blog && bundle exec jekyll serve --port 8080 --host 0.0.0.0
-	#JEKYLL_ENV=production jekyll serve --watch --source ~/git/palladius.github.io/blog -B
+	JEKYLL_ENV=production bundle exec jekyll serve --port 8080 --host 0.0.0.0
+	#JEKYLL_ENV=production jekyll serve --watch --source ~/git/palladius.github.io/ -B
 
 
 clean:
