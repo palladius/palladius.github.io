@@ -22,8 +22,8 @@
             banner.style.color = '#ffffff';
             banner.innerHTML = 'ℹ️ <b>Nota:</b> Sei sulla root di <code>palladius.github.io</code>. Questo sito fa da "catch-all" per i progetti senza una propria pagina.';
           } 
-          // Se siamo su una sottocartella che NON sembra un post del blog (/2024/...) o un asset
-          else if (!pathname.match(/^(\/[0-9]{4}\/|\/assets\/|\/css\/|\/about)/)) {
+          // Se siamo su una sottocartella che NON sembra un post del blog o un asset
+          else if (!pathname.match(/^(\/assets\/|\/css\/|\/about)/) && !pathname.match(/\/[0-9]{4}\/[0-9]{2}\/[0-9]{2}\//) && !pathname.endsWith('.html')) {
             banner.style.display = 'block';
             banner.style.background = '#ef4444'; // Rosso fuoco
             banner.style.color = '#ffffff';
