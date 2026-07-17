@@ -6,21 +6,22 @@
 
 
 // Our variables
-$base-font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-$base-font-size:   16px;
+$base-font-family: -apple-system, BlinkMacSystemFont, "Inter", "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+$base-font-size:   18px;
 $base-font-weight: 400;
 $small-font-size:  $base-font-size * 0.875;
-$base-line-height: 1.5;
+$base-line-height: 1.6;
 
 $spacing-unit:     30px;
 
-$text-color:       #111;
-$background-color: #fdfdfd;
-$brand-color:      #2a7ae2;
+// Dark Mode Colors
+$text-color:       #e2e8f0;
+$background-color: #0f172a;
+$brand-color:      #38bdf8;
 
-$grey-color:       #828282;
-$grey-color-light: lighten($grey-color, 40%);
-$grey-color-dark:  darken($grey-color, 25%);
+$grey-color:       #94a3b8;
+$grey-color-light: #1e293b;
+$grey-color-dark:  #cbd5e1;
 
 // Width of the content area
 $content-width:    800px;
@@ -107,4 +108,50 @@ $on-laptop:        800px;
         display: table;
         clear: both;
     }
+}
+
+// ==========================================================================
+// Modern Aesthetics & Glassmorphism
+// ==========================================================================
+body {
+    transition: background-color 0.3s ease, color 0.3s ease;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+    transition: color 0.2s ease-in-out;
+    &:hover {
+        color: lighten($brand-color, 15%);
+        text-decoration: underline;
+    }
+}
+
+.site-header {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    background: rgba(15, 23, 42, 0.75) !important;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+.site-title, .page-link {
+    font-weight: 500;
+}
+
+.site-footer {
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+    background: rgba(15, 23, 42, 0.5);
+}
+
+// Beautify code blocks and quotes for dark mode
+blockquote {
+    color: $grey-color-dark;
+    border-left-color: $brand-color;
+    background: rgba(255, 255, 255, 0.03);
+    padding: 10px 15px;
+    border-radius: 4px;
 }
