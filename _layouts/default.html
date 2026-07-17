@@ -15,6 +15,11 @@
 
         // Se l'utente visita questo sito tramite il dominio github.io invece del dominio principale
         if (hostname.indexOf('palladius.github.io') !== -1) {
+          // Se siamo sulla root page esatta, non mostrare l'allarme
+          if (pathname === '/' || pathname === '/index.html') {
+            return;
+          }
+          
           banner.style.display = 'block';
           banner.style.background = '#ef4444'; // Rosso fuoco
           banner.style.color = '#ffffff';
