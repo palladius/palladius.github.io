@@ -13,23 +13,13 @@
         var pathname = window.location.pathname;
         var banner = document.getElementById('gh-pages-catchall-banner');
 
-        // Controlla se siamo sul dominio github.io di palladius
+        // Se l'utente visita questo sito tramite il dominio github.io invece del dominio principale
         if (hostname.indexOf('palladius.github.io') !== -1) {
-          // Se siamo sulla root (/) va bene, ma diamo comunque un piccolo avviso amichevole
-          if (pathname === '/' || pathname === '/index.html') {
-            banner.style.display = 'block';
-            banner.style.background = '#3b82f6'; // Blu
-            banner.style.color = '#ffffff';
-            banner.innerHTML = 'ℹ️ <b>Nota:</b> Sei sulla root di <code>palladius.github.io</code>. Questo sito fa da "catch-all" per i progetti senza una propria pagina.';
-          } 
-          // Se siamo su una sottocartella che NON sembra un post del blog o un asset
-          else if (!pathname.match(/^(\/assets\/|\/css\/|\/about)/) && !pathname.match(/\/[0-9]{4}\/[0-9]{2}\/[0-9]{2}\//) && !pathname.endsWith('.html')) {
-            banner.style.display = 'block';
-            banner.style.background = '#ef4444'; // Rosso fuoco
-            banner.style.color = '#ffffff';
-            banner.style.fontWeight = 'bold';
-            banner.innerHTML = '🚨 ATTENZIONE: Questo sito tende ad attrarre i GitHub Pages di altri siti di palladius! 🚨<br><small>Stai cercando di accedere a <code>' + pathname + '</code> ma sei finito nel blog principale. Probabilmente la build GitHub Pages dell\'altro repository è fallita o non è configurata.</small>';
-          }
+          banner.style.display = 'block';
+          banner.style.background = '#ef4444'; // Rosso fuoco
+          banner.style.color = '#ffffff';
+          banner.style.fontWeight = 'bold';
+          banner.innerHTML = '🚨 ATTENZIONE: Questo sito tende ad attrarre i GitHub Pages di altri siti di palladius! 🚨<br><small>Sei sul dominio <code>palladius.github.io</code>. Se cercavi un altro progetto, la sua build GitHub Pages è fallita. Se cercavi questo blog, visita il dominio corretto.</small>';
         }
       })();
     </script>

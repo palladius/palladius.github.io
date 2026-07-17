@@ -155,3 +155,22 @@ blockquote {
     padding: 10px 15px;
     border-radius: 4px;
 }
+
+// Code block visibility fix
+code, kbd, pre, tt {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #e2e8f0;
+    border-radius: 3px;
+    padding: 2px 4px;
+}
+
+pre {
+    padding: 12px;
+    overflow-x: auto;
+    background-color: rgba(0, 0, 0, 0.3);
+    
+    code {
+        background-color: transparent;
+        padding: 0;
+    }
+}
