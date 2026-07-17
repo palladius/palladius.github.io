@@ -5,6 +5,36 @@
 
   <body>
 
+    <!-- Banner di Warning Intelligente per GitHub Pages -->
+    <div id="gh-pages-catchall-banner" style="display: none; padding: 15px; text-align: center; z-index: 9999; font-family: sans-serif;"></div>
+    <script>
+      (function() {
+        var hostname = window.location.hostname;
+        var pathname = window.location.pathname;
+        var banner = document.getElementById('gh-pages-catchall-banner');
+
+        // Controlla se siamo sul dominio github.io di palladius
+        if (hostname.indexOf('palladius.github.io') !== -1) {
+          // Se siamo sulla root (/) va bene, ma diamo comunque un piccolo avviso amichevole
+          if (pathname === '/' || pathname === '/index.html') {
+            banner.style.display = 'block';
+            banner.style.background = '#3b82f6'; // Blu
+            banner.style.color = '#ffffff';
+            banner.innerHTML = 'ℹ️ <b>Nota:</b> Sei sulla root di <code>palladius.github.io</code>. Questo sito fa da "catch-all" per i progetti senza una propria pagina.';
+          } 
+          // Se siamo su una sottocartella che NON sembra un post del blog (/2024/...) o un asset
+          else if (!pathname.match(/^(\/[0-9]{4}\/|\/assets\/|\/css\/|\/about)/)) {
+            banner.style.display = 'block';
+            banner.style.background = '#ef4444'; // Rosso fuoco
+            banner.style.color = '#ffffff';
+            banner.style.fontWeight = 'bold';
+            banner.innerHTML = '🚨 ATTENZIONE: Questo sito tende ad attrarre i GitHub Pages di altri siti di palladius! 🚨<br><small>Stai cercando di accedere a <code>' + pathname + '</code> ma sei finito nel blog principale. Probabilmente la build GitHub Pages dell\'altro repository è fallita o non è configurata.</small>';
+          }
+        }
+      })();
+    </script>
+    <!-- Fine Banner -->
+
     {% include header.html %}
 
     <div class="page-content">
