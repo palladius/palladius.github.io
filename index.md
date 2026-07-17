@@ -8,7 +8,7 @@ date:   2024-11-24 12:20:05 +0100
 categories: jekyll update
 ---
 
-*Last updated: 2024-11-24*
+*Last updated: {{ site.time | date: "%Y-%m-%d" }}*
 
 Hi I'm [SREccardo](https://x.com/sreccardo) aka [palladius](https://x.com/palladius).
 
