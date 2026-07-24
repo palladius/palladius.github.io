@@ -1,0 +1,6 @@
+# Languages - EN first to avoid Blowfish Italian JS bug
+en:
+  label: "🇬🇧 English"
+  direction: "ltr"
+  title: "Riccardo's 🎭 Blog"
+  weight: 1

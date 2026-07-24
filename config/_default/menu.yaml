@@ -1,0 +1,30 @@
+# Blowfish menu
+main:
+  - identifier: posts
+    name: Blog
+    pageRef: posts
+    weight: 10
+  - identifier: categories
+    name: Categorie
+    pageRef: categories
+    weight: 20
+  - identifier: tags
+    name: Tags
+    pageRef: tags
+    weight: 30
+  - identifier: search
+    name: "🔍"
+    pageRef: search
+    weight: 40
+
+social:
+  - identifier: github
+    name: GitHub
+    url: https://github.com/palladius
+    params:
+      icon: github
+  - identifier: linkedin
+    name: LinkedIn
+    url: https://www.linkedin.com/in/riccardocarlesso/
+    params:
+      icon: linkedin

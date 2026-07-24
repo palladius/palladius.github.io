@@ -1,0 +1,82 @@
+# Blowfish params — OVER THE TOP mode 🐡💛
+
+# Color scheme — using Blowfish's built-in schemes
+# Options: blowfish, avocado, fire, ocean, forest, princess, neon, bloody, terminal, marvel, noir, autumn, congo, slate
+# We'll create a custom yellow one
+colorScheme: "autumn"
+
+# Enable dynamic background on homepage — the showstopper! 🎆
+enableSearch: true
+enableCodeCopy: true
+
+# Site footer
+footer:
+  showCopyright: true
+  showThemeAttribution: true
+  showAppearanceSwitcher: true
+  showScrollToTop: true
+
+# Homepage — HERO layout with dynamic background
+homepage:
+  layout: "background"  # background = fullscreen dynamic bg, hero = big image
+  homepageImage: ""
+  showRecent: true
+  showRecentItems: 12
+  showMoreLink: true
+  showMoreLinkDest: "/posts"
+  cardView: true
+  cardViewScreenWidth: false
+  layoutBackgroundBlur: true
+
+# Article display
+article:
+  showDate: true
+  showViews: false
+  showLikes: false
+  showDateUpdated: false
+  showAuthor: true
+  showBreadcrumbs: true
+  showDraftLabel: true
+  showEdit: false
+  showHeadingAnchors: true
+  showPagination: true
+  showReadingTime: true
+  showTableOfContents: true
+  showTaxonomies: true
+  showWordCount: false
+  sharingLinks:
+    - linkedin
+    - twitter
+    - email
+
+# List pages
+list:
+  showBreadcrumbs: true
+  showTableOfContents: false
+  showTaxonomies: true
+  groupByYear: true
+  cardView: true
+  cardViewScreenWidth: false
+
+# Taxonomy
+taxonomy:
+  showTermCount: true
+  cardView: true
+
+# Sitemap
+sitemap:
+  excludedKinds: []
+
+# Header
+header:
+  layout: "basic"
+  logo: ""
+  logoDark: ""
+  showTitle: true
+
+# Image processing
+imageProcessing:
+  cover:
+    enabled: true
+  content:
+    enabled: true

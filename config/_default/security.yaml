@@ -1,0 +1,3 @@
+# Security policy — allow HTML content from Joomla imports
+allowContent:
+  - ".*"

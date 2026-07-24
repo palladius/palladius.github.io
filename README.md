@@ -1,46 +1,25 @@
-# Ricc Jekyll website
+Welcome to Riccardo test on Hugo + Netlify.
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/fcb66aec-9841-45ec-90b6-951e47808d88/deploy-status)](https://app.netlify.com/sites/sreccardo-blog/deploys)
+* Self (prod): https://hugo-stack.ricc.rocks
+* Self: (dev): https://master--timely-bombolone-ae5bc6.netlify.app/ or
+  https://timely-bombolone-ae5bc6.netlify.app/
 
-Self:
+[![Netlify Status](https://api.netlify.com/api/v1/badges/05edf93f-0b88-45b2-a166-318956c87756/deploy-status)](https://app.netlify.com/sites/timely-bombolone-ae5bc6/deploys)
 
-* SRC Repo: https://github.com/palladius/palladius.github.io/
-* DST Blog: http://blog.palladi.us/
-* DST Netlified into: https://sreccardo-blog.netlify.app/
-* RiccDoc: go/pbt-rickywiki
 
-Folder organization:
+Currently it all works locally, but in the cloud... (seems the beginning of a fun PEBCAK story)...
+I got 404.
 
-* All jekyll files are in the root directory.
-* Everything that helps building it is outside except what NEEDS to be there like entrypoint.
+https://answers.netlify.com/t/support-guide-i-ve-deployed-my-site-but-i-still-see-page-not-found/125?utm_source=404page&utm_campaign=community_tracking
 
-## Vision
+WTF is the  /index.html ?!?
 
-As of Oct 2024, this is becoming part of my greater vision go/ricc-rikiwiki: write once, use Gemini, push everywhere.
+The working version has:
+* basedir: not set.
+* build command: hugo
+* publish directory: public
 
-## Image Gallery
 
-* https://olivierpieters.be/blog/2016/02/26/creating-a-jekyll-image-gallery
-* install deps w/ bower: see `OTHER-IDEAS.md`
+## Thanks
 
-## Auto-build
-
-Not sure if it works at all. Looks like its stuck.
-
-## productionization
-
-See `OTHER-IDEAS.md`
-
-## Themes
-
-By default I use `minima`. Some free ones I like:
-
-1. https://jekyllthemes.io/theme/minimal-mistakes 12.4k stars on [github](https://github.com/mmistakes/minimal-mistakes).
-2. https://jekyllthemes.io/theme/online-cv 3.2k stars on [github](https://github.com/sharu725/online-cv). Great for a CV online
-3. https://jekyllthemes.io/theme/feeling-responsive 898stars on [github](https://github.com/Phlow/feeling-responsive)
-
-Maybe I could start with the first one?
-
-## Credits
-
-* Olivier Pieters (me@olivierpieters.be') for his beautiful jekyll gallery which I'm using.
+* Jimmy for the Hugo [stack](https://github.com/CaiJimmy/hugo-theme-stack) module.

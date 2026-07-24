@@ -1,0 +1,12 @@
+# Blowfish config for palladius.github.io
+baseURL: "https://palladius.github.io"
+paginate: 12
+title: "Il Blog di Riccardo Carlesso"
+defaultContentLanguage: "en"
+enableRobotsTXT: true
+summaryLength: 30
+
+# Hugo module - Blowfish theme
+module:
+  imports:
+    - path: "github.com/nunocoracao/blowfish/v2"

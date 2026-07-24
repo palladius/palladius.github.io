@@ -1,42 +1,23 @@
 
-APPNAME = sreccardo-blog
-VERSION = $(shell cat VERSION)
-PROJECT_ID = 7eptober
+dev: run-dev
 
-# added watch, not sure why SERVE and SERVER both work!
-run-locally-2024:
-#	bundle exec jekyll serve
-	bundle exec jekyll server --watch
+run-dev:
+	hugo server --disableFastRender
+run-prod:
+	hugo server
 
-entrypoint-test:
-	RICCARDO_BLOG_URL=https://sreccardo-blog.netlify.app/ RICCARDO_FAVORITE_COLOR=fuxia ./entrypoint-8080.sh
-# run-locally:
-# 	make run
+modules-blah:
+	hugo mod get -u github.com/CaiJimmy/hugo-theme-stack/v3
+	hugo mod tidy
 
-# docker-run-stateless:
-# 	./docker-run.sh
+hugo-theme-stack-removeme:
+	git clone https://github.com/CaiJimmy/hugo-theme-stack hugo-theme-stack-removeme
 
-docker-build:
-	docker build -t $(APPNAME):v$(VERSION) . | tee t.docker-latest-run.log
-	docker tag $(APPNAME):v$(VERSION) gcr.io/7eptober/$(APPNAME):v$(VERSION)
-docker-push:
-	docker push gcr.io/$(PROJECT_ID)/$(APPNAME):v$(VERSION)
-docker-run:
-	docker run -it -p 8080:8080  --env-file docker-prod.env -t $(APPNAME):v$(VERSION) jekyll serve -P 8080 -s ./
-docker-run-bash:
-	docker run -it -p 8080:8080  --env-file docker-prod.env -t $(APPNAME):v$(VERSION) bash
+submodules:
+# from https://stack.jimmycai.com/guide/getting-started
+	git submodule add https://github.com/CaiJimmy/hugo-theme-stack/ themes/hugo-theme-stack
 
-
-# create-alcumbs-automagically:
-# 	bin/enable-conda-env.sh
-
-# galleries:
-# 	~/miniconda/envs/sreccardo-blog-env/bin/python bin/opieters_gallery_creator.py
-
-run-in-prod-on-gce:
-	JEKYLL_ENV=production bundle exec jekyll serve --port 8080 --host 0.0.0.0
-	#JEKYLL_ENV=production jekyll serve --watch --source ~/git/palladius.github.io/ -B
-
-
-clean:
-	rm -rf _site/
+#test:
+install:
+#	hugo version || gem install hugo
+	hugo version || brew install hugo
