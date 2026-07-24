@@ -1,0 +1,41 @@
+/* Custom CSS overrides for palladius.github.io — OVER THE TOP 🎆 */
+
+/* Animated gradient background for hero */
+.hero-gradient {
+    background: linear-gradient(-45deg, #f59e0b, #d97706, #fbbf24, #f97316, #eab308);
+    background-size: 400% 400%;
+    animation: gradient-shift 8s ease infinite;
+}
+
+@keyframes gradient-shift {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* Make cards pop */
+article.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+article.card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 40px rgba(245, 158, 11, 0.25);
+}
+
+/* Golden glow on links */
+a:hover {
+    text-shadow: 0 0 8px rgba(251, 191, 36, 0.4);
+}
+
+/* Fancy scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+::-webkit-scrollbar-track {
+    background: rgba(45, 45, 45, 0.1);
+}
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(180deg, #f59e0b, #d97706);
+    border-radius: 4px;
+}
