@@ -13,9 +13,9 @@ footer:
   showAppearanceSwitcher: true
   showScrollToTop: true
 
-# Homepage — HERO layout with background image!
+# Homepage — PROFILE layout (compact, no giant image)
 homepage:
-  layout: "hero"
+  layout: "profile"
   homepageImage: "images/hero-chi-sono.jpg"
   showRecent: true
   showRecentItems: 12
