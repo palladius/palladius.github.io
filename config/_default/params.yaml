@@ -13,17 +13,17 @@ footer:
   showAppearanceSwitcher: true
   showScrollToTop: true
 
-# Homepage — PROFILE layout (compact, no giant image)
+# Homepage — old Joomla header banner 🎭
 homepage:
-  layout: "profile"
-  homepageImage: "images/hero-chi-sono.jpg"
+  layout: "hero"
+  homepageImage: "images/logo_palladius.png"
   showRecent: true
   showRecentItems: 12
   showMoreLink: true
   showMoreLinkDest: "/posts"
   cardView: true
   cardViewScreenWidth: false
-  layoutBackgroundBlur: true
+  layoutBackgroundBlur: false
 
 # Author info in sidebar
 author:
