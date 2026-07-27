@@ -1,0 +1,18 @@
+---
+title: "come si greppa in AND e in OR?!?"
+date: 2006-04-05 11:55:28
+lastmod: 2006-04-05 12:11:59
+slug: "come-si-greppa"
+categories:
+  - "Contenuti"
+  - "Linux"
+tags:
+  - "joomla-import"
+  - "linux"
+joomla_id: 60
+joomla_url: "https://www.palladius.it/joomla/index.php?option=com_content&view=article&id=60"
+joomla_section: "Contenuti"
+joomla_category: "Linux"
+---
+<!-- Imported from Joomla 1.5 | Article ID: 60 | Section: Contenuti | Category: Linux -->
+<p>Mi consenta di <em>stropicciarmi gli occhi e le orecchie</em> per la domanda...</p><p>&nbsp;Per greppare in <strong>AND </strong>basta fare due pipe di fila, tipo:</p><pre>&nbsp;# cat nomefile | grep pippo | grep pluto </pre><p>Per greppare in <strong>OR</strong>, occorrono le regular expression quindi la cosa si complica un tot:</p><pre>#&nbsp; cat nomefile | egrep &quot;pippo|pluto&quot; </pre><p>Se poi volete greppare qualcosa che contiene A e B ma <em>non </em>C:</p><pre>&nbsp;# cat nomefile | grep A | grep B | grep -v C </pre>
