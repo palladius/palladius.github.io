@@ -1,92 +1,27 @@
-# Blowfish params — SBORONE MODE 🐡💛🎆
+# Stack theme params
+mainSections:
+  - "posts"
 
-# CUSTOM GOLD color scheme
-colorScheme: "palladius"
+sidebar:
+  emoji: "🐡"
+  subtitle: "Italian in Zürich. SRE, AI, Ruby."
 
-enableSearch: true
-enableCodeCopy: true
-
-# Footer
-footer:
-  showCopyright: true
-  showThemeAttribution: false
-  showAppearanceSwitcher: true
-  showScrollToTop: true
-
-# Homepage — old Joomla header banner 🎭
-homepage:
-  layout: "hero"
-  homepageImage: "images/logo_palladius.png"
-  showRecent: true
-  showRecentItems: 12
-  showMoreLink: true
-  showMoreLinkDest: "/posts"
-  cardView: true
-  cardViewScreenWidth: false
-  layoutBackgroundBlur: false
-
-# Author info in sidebar
-author:
-  name: "Riccardo Carlesso"
-  image: "riccardo-bicicletta-gugol.jpg"
-  headline: "20 anni di maialate 🐷"
-  bio: |
-    Opere, viaggi, foto, seghe mentali.
-    🦄 Googler · 💎 Rubyist · 🍷 Half-Stack Developer
-  links:
-    - github: https://github.com/palladius
-    - linkedin: https://linkedin.com/in/riccardocarlesso
-    - youtube: https://www.youtube.com/c/riccardocarlesso
-
-# Article display
 article:
-  showDate: true
-  showViews: false
-  showLikes: false
-  showDateUpdated: false
-  showAuthor: true
-  showAuthorBottom: true
-  showBreadcrumbs: true
-  showDraftLabel: true
-  showEdit: false
-  showHeadingAnchors: true
-  showPagination: true
-  showReadingTime: true
-  showTableOfContents: true
-  showTaxonomies: false
-  showWordCount: false
-  showHero: true
-  heroStyle: "background"
-  sharingLinks:
-    - linkedin
-    - twitter
-    - email
+  math: false
+  readingTime: true
+  toc: true
 
-# List pages — CARD VIEW with images
-list:
-  showBreadcrumbs: true
-  showTableOfContents: false
-  showTaxonomies: false
-  groupByYear: true
-  cardView: true
-  cardViewScreenWidth: false
-  showHero: true
-  heroStyle: "background"
+footer:
+  since: 2005
 
-# Taxonomy
-taxonomy:
-  showTermCount: true
-  cardView: true
+colorScheme:
+  toggle: true
+  default: "auto"
 
-# Header
-header:
-  layout: "fixed"
-  logo: "images/logo_palladius.png"
-  showTitle: false
-
-# Image processing
-imageProcessing:
-  cover:
-    enabled: true
-  content:
-    enabled: true
+widgets:
+  homepage:
+    - type: search
+    - type: categories
+    - type: tag-cloud
+      params:
+        limit: 20
