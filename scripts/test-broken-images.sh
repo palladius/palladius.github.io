@@ -61,7 +61,7 @@ echo ""
 TOTAL_UNIQUE=$(echo "$ALL_REFS" | sort -u | grep -c . || true)
 BROKEN_UNIQUE=0
 OK_UNIQUE=0
-for img in $(echo "$ALL_REFS" | sort -u); do
+while IFS= read -r img; do
     [ -z "$img" ] && continue
     DECODED=$(printf '%b' "${img//%/\\x}")
     if [ -f "$STATIC_DIR/$DECODED" ]; then
@@ -69,7 +69,7 @@ for img in $(echo "$ALL_REFS" | sort -u); do
     else
         BROKEN_UNIQUE=$((BROKEN_UNIQUE + 1))
     fi
-done
+done < <(echo "$ALL_REFS" | sort -u)
 
 echo "═══════════════════════════════════════════════════"
 echo "  ✅ Found:  $OK_UNIQUE unique images"
