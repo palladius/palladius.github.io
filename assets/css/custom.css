@@ -1,5 +1,26 @@
 /* Custom CSS overrides for palladius.github.io — OVER THE TOP 🎆 */
 
+/* Fix hero banner: display at natural aspect ratio, not stretched 4:3 */
+.hero-image {
+    aspect-ratio: auto !important;
+    max-height: 200px !important;
+    height: auto !important;
+}
+.hero-image img {
+    object-fit: contain !important;
+    height: auto !important;
+    max-height: 200px !important;
+}
+/* The hero wrapper shouldn't force a huge height */
+#hero {
+    min-height: auto !important;
+}
+#hero .hero-image-container,
+#hero .w-full {
+    max-height: 250px !important;
+    min-height: auto !important;
+}
+
 /* Animated gradient background for hero */
 .hero-gradient {
     background: linear-gradient(-45deg, #f59e0b, #d97706, #fbbf24, #f97316, #eab308);
