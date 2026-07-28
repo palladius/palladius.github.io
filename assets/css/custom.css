@@ -52,13 +52,25 @@ article.max-w-full > .relative > .mx-auto > .relative.shadow-xl .min-h-\[148px\]
 .article-link--card:nth-child(6n+5) { background: linear-gradient(135deg, #eff6ff 0%, #dbeafe 100%) !important; }
 .article-link--card:nth-child(6n+6) { background: linear-gradient(135deg, #fdf2f8 0%, #fce7f3 100%) !important; }
 
-/* Dark mode card backgrounds */
-.dark .article-link--card:nth-child(6n+1) { background: linear-gradient(135deg, #451a03 0%, #78350f 100%) !important; }
-.dark .article-link--card:nth-child(6n+2) { background: linear-gradient(135deg, #450a0a 0%, #7f1d1d 100%) !important; }
-.dark .article-link--card:nth-child(6n+3) { background: linear-gradient(135deg, #2e1065 0%, #4c1d95 100%) !important; }
-.dark .article-link--card:nth-child(6n+4) { background: linear-gradient(135deg, #022c22 0%, #064e3b 100%) !important; }
-.dark .article-link--card:nth-child(6n+5) { background: linear-gradient(135deg, #172554 0%, #1e3a5f 100%) !important; }
-.dark .article-link--card:nth-child(6n+6) { background: linear-gradient(135deg, #500724 0%, #831843 100%) !important; }
+/* Dark mode card backgrounds — vibrant, not muddy */
+.dark .article-link--card:nth-child(6n+1) { background: linear-gradient(135deg, #292117 0%, #3d2e14 100%) !important; border-left: 3px solid #f59e0b !important; }
+.dark .article-link--card:nth-child(6n+2) { background: linear-gradient(135deg, #2a1518 0%, #3d1c22 100%) !important; border-left: 3px solid #ef4444 !important; }
+.dark .article-link--card:nth-child(6n+3) { background: linear-gradient(135deg, #1e1533 0%, #2d2050 100%) !important; border-left: 3px solid #a78bfa !important; }
+.dark .article-link--card:nth-child(6n+4) { background: linear-gradient(135deg, #0f2420 0%, #163830 100%) !important; border-left: 3px solid #34d399 !important; }
+.dark .article-link--card:nth-child(6n+5) { background: linear-gradient(135deg, #131c30 0%, #1a2845 100%) !important; border-left: 3px solid #60a5fa !important; }
+.dark .article-link--card:nth-child(6n+6) { background: linear-gradient(135deg, #27101e 0%, #3b1530 100%) !important; border-left: 3px solid #f472b6 !important; }
+
+/* Dark mode: ALL card text must be white/light */
+.dark .article-link--card,
+.dark .article-link--card *,
+.dark .article-link--card h2,
+.dark .article-link--card h3,
+.dark .article-link--card p,
+.dark .article-link--card span,
+.dark .article-link--card time,
+.dark .article-link--card a {
+    color: rgba(255, 255, 255, 0.92) !important;
+}
 
 /* Card hover — POP effect */
 .article-link--card:hover {
@@ -67,7 +79,7 @@ article.max-w-full > .relative > .mx-auto > .relative.shadow-xl .min-h-\[148px\]
 }
 
 .dark .article-link--card:hover {
-    box-shadow: 0 20px 40px rgba(251, 191, 36, 0.2) !important;
+    box-shadow: 0 16px 40px rgba(255, 255, 255, 0.1), 0 0 20px rgba(251, 191, 36, 0.15) !important;
 }
 
 /* ═══ COLORFUL TAGS ═══ */
